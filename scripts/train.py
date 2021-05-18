@@ -520,6 +520,7 @@ if __name__ == '__main__':
         wandb = None
         prefix = colorstr('wandb: ')
         logger.info(f"{prefix}Install Weights & Biases for YOLOv5 logging with 'pip install wandb' (recommended)")
+    wandb = None
     if not opt.evolve:
         tb_writer = None  # init loggers
         if opt.global_rank in [-1, 0]:
